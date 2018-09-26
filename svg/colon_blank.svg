@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+ Copyright (c) 2018 Leonardo Pessoa
+ https://lmpessoa.com
+ 
+ Licensed under the Leeow Open Source License, Version 1.0 (the "License"); you may not
+ use this file except in compliance with the License. You may obtain a copy of the 
+ License at:
+ 
+ https://www.leeow.io/licences/1.0
+ 
+ UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING, SOFTWARE DISTRIBUTED UNDER
+ THE LICENSE IS DISTRIBUTED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
+ ANY KIND, EITHER EXPRESS OR IMPLIED. See the License for the specific language
+ governing permissions and limitations under the License.
+-->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 27.00001 118"
+   version="1.1"
+   id="svg909"
+   sodipodi:docname="colon_blank.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   width="27"
+   height="118">
+  <metadata
+     id="metadata915">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs913" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="960"
+     id="namedview911"
+     showgrid="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="142.61603"
+     inkscape:cy="70.11379"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg909"
+     units="px" />
+  <rect
+     style="opacity:1;fill:#000000;fill-opacity:0.97716896;fill-rule:nonzero;stroke:none;stroke-width:0.58387482;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="rect1625"
+     width="27"
+     height="118"
+     x="0"
+     y="-0.00036206245"
+     inkscape:label="bg" />
+  <path
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:125%;font-family:'alarm clock';-inkscape-font-specification:'alarm clock, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:0.02000002;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.38957px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     id="path1533"
+     d="m 3.3388305,80.497408 6.391543,-6.105925 q 1.1613395,-1.017639 2.1701535,-1.017639 0.936776,0 2.141884,1.163018 l 5.270462,6.251306 q 0.772774,1.163037 0.698057,2.107995 -0.08619,1.090338 -1.18697,2.253375 l -6.270419,6.396685 Q 10.997437,93 10.3489,93 9.1959622,93 8.339665,91.982362 L 2.5789163,84.640719 Q 1.9330387,83.695741 2.0077451,82.750784 2.0939371,81.660445 3.3388305,80.497408 Z M 7.3213128,30.123583 13.712875,24.017676 Q 14.874195,23 15.883009,23 q 0.936776,0 2.141884,1.163037 l 5.270482,6.251305 q 0.772754,1.163019 0.698038,2.107995 -0.08619,1.090338 -1.186951,2.253376 l -6.270419,6.396666 q -1.556124,1.453796 -2.204641,1.453796 -1.152938,0 -2.009236,-1.017639 L 6.5613986,34.266893 Q 5.9155209,33.321916 5.9902372,32.376958 6.0764292,31.286601 7.3213128,30.123583 Z"
+     inkscape:label="sep" />
+</svg>
