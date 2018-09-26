@@ -162,8 +162,8 @@ namespace Timer {
                         if ((negative.IsChecked ?? false)) {
                             isNegative = true;
                         } else {
-                            startStopIcon.Source = (DrawingImage) res["StartImage"];
-                            startStopText.Text = "Start";
+                            startStopIcon.Source = startImg;
+                            startStopText.Text = Timer.Properties.Resources.start;
                         }
                     }
                 }
