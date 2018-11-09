@@ -1,6 +1,10 @@
 ![Timer main screen](https://github.com/lmpessoa/timer/raw/images/main-screenshot.png)
 
-This is a simple application to provide a timer for events. 
+This is a simple application to provide a timer for events.
+
+## Usage
+
+I recommend using this Timer application in a notebook connected to an external monitor. Set Windows to extend the workspace area to this second monitor instead of mirroring. Place the **Main Display** window entirely on the external monitor and press F11 to make it full screen. Use the **Timer Settings** window to set the behaviour of the timer.
 
 Application settings are very simple as can be seen from the interface. You can set whatever time you need for start and hit play to start counting down. Currently the timer is limited to minutes and seconds (thus a practical limit of about 100 minutes - less one secont).
 
