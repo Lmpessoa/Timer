@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Timer.Properties {
+namespace Lmpessoa.Timer.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Timer.Properties {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Timer.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Lmpessoa.Timer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -79,6 +79,24 @@ namespace Timer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hours.
+        /// </summary>
+        public static string hours {
+            get {
+                return ResourceManager.GetString("hours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Numer of hours is too big..
+        /// </summary>
+        public static string hours_too_big {
+            get {
+                return ResourceManager.GetString("hours_too_big", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Timer Settings.
         /// </summary>
         public static string main_title {
@@ -88,11 +106,38 @@ namespace Timer.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Minutes.
+        /// </summary>
+        public static string minutes {
+            get {
+                return ResourceManager.GetString("minutes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Number of minutes is too big. Switch to using hours and try again..
+        /// </summary>
+        public static string minutes_too_big {
+            get {
+                return ResourceManager.GetString("minutes_too_big", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Continue counting after timer ends.
         /// </summary>
         public static string negative {
             get {
                 return ResourceManager.GetString("negative", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to is not a valid time..
+        /// </summary>
+        public static string no_valid_time {
+            get {
+                return ResourceManager.GetString("no_valid_time", resourceCulture);
             }
         }
         
@@ -147,6 +192,15 @@ namespace Timer.Properties {
         public static string timer_value {
             get {
                 return ResourceManager.GetString("timer_value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usar.
+        /// </summary>
+        public static string use {
+            get {
+                return ResourceManager.GetString("use", resourceCulture);
             }
         }
         

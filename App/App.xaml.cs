@@ -20,43 +20,21 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-using System.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Linq;
+using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Input;
-using System.Windows.Media;
 
-namespace Timer {
+namespace Lmpessoa.Timer {
 
-    public partial class DisplayWindow : Window {
+    public partial class App : Application {
 
-        public DisplayWindow() {
-            InitializeComponent();
-        }
-
-        public double ImageWidth => imageBox.Width;
-
-        public bool CanClose { get; set; } = false;
-
-        public void SetImage(ImageSource drawing) {
-            imageBox.Source = drawing;
-        }
-
-        private void Window_KeyUp(object sender, KeyEventArgs e) {
-            if (e.Key == Key.F11) {
-                if (WindowState == WindowState.Normal) {
-                    WindowState = WindowState.Maximized;
-                    WindowStyle = WindowStyle.None;
-                    Topmost = true;
-                } else {
-                    WindowState = WindowState.Normal;
-                    WindowStyle = WindowStyle.SingleBorderWindow;
-                    Topmost = false;
-                }
-            }
-        }
-
-        private void Window_Closing(object sender, CancelEventArgs e) {
-            e.Cancel = !CanClose;
+        protected override void OnStartup(StartupEventArgs e) {
+            base.OnStartup(e);
+            //System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("pt-BR");
         }
     }
 }

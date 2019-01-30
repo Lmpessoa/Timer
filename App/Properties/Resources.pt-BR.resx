@@ -118,36 +118,54 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="blink" xml:space="preserve">
-    <value>Blink after timer ends</value>
+    <value>Piscar depois que o tempo terminar</value>
   </data>
   <data name="display_title" xml:space="preserve">
-    <value>Main Display</value>
+    <value>Display Principal</value>
+  </data>
+  <data name="hours" xml:space="preserve">
+    <value>Horas</value>
+  </data>
+  <data name="hours_too_big" xml:space="preserve">
+    <value>O número de horas é muito grande.</value>
   </data>
   <data name="main_title" xml:space="preserve">
-    <value>Timer Settings</value>
+    <value>Configurações do Timer</value>
+  </data>
+  <data name="minutes" xml:space="preserve">
+    <value>Minutos</value>
+  </data>
+  <data name="minutes_too_big" xml:space="preserve">
+    <value>O número de minutos é muito grande. Mude para usar horas e tente novamente.</value>
   </data>
   <data name="negative" xml:space="preserve">
-    <value>Continue counting after timer ends</value>
+    <value>Continuar contando depois que o tempo terminar</value>
+  </data>
+  <data name="no_valid_time" xml:space="preserve">
+    <value>não é um tempo válido.</value>
   </data>
   <data name="red_alert" xml:space="preserve">
-    <value>Final alert after</value>
+    <value>Alerta final depois de</value>
   </data>
   <data name="set_timer" xml:space="preserve">
-    <value>Set Timer</value>
+    <value>Atualizar</value>
   </data>
   <data name="sounds" xml:space="preserve">
-    <value>Play sounds during alerts</value>
+    <value>Tocar sons durante os alertas</value>
   </data>
   <data name="start" xml:space="preserve">
-    <value>Start</value>
+    <value>Iniciar</value>
   </data>
   <data name="stop" xml:space="preserve">
-    <value>Stop</value>
+    <value>Parar</value>
   </data>
   <data name="timer_value" xml:space="preserve">
-    <value>Value of timer</value>
+    <value>Valor do timer</value>
+  </data>
+  <data name="use" xml:space="preserve">
+    <value>Usar</value>
   </data>
   <data name="yellow_alert" xml:space="preserve">
-    <value>Mid-time alert after</value>
+    <value>Alerta intermediário depois de</value>
   </data>
 </root>
