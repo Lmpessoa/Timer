@@ -1,5 +1,4 @@
-<span style="font-size: 2em"><img src="Resources/Timer-48.png" style="position: relative; top: 17px"/> Timer</span>
-<hr style="height: 1px"/>
+![Timer icon](Resources/Timer-64.png)
 
 This is a simple application that can be used to provide a timer for events and presentations.
 
