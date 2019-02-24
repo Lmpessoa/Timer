@@ -1,4 +1,4 @@
-![Timer icon](Resources/Timer-64.png)
+![Timer icon](Resources/Header.png)
 
 This is a simple application that can be used to provide a timer for events and presentations.
 
