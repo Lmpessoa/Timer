@@ -19,7 +19,7 @@ namespace Lmpessoa.Timer.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -88,7 +88,7 @@ namespace Lmpessoa.Timer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Numer of hours is too big..
+        ///   Looks up a localized string similar to Number of hours is too big to display..
         /// </summary>
         public static string hours_too_big {
             get {
@@ -115,7 +115,7 @@ namespace Lmpessoa.Timer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of minutes is too big. Switch to using hours and try again..
+        ///   Looks up a localized string similar to Number of minutes is too big to display. Switch to using hours and try again..
         /// </summary>
         public static string minutes_too_big {
             get {
@@ -196,7 +196,7 @@ namespace Lmpessoa.Timer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Usar.
+        ///   Looks up a localized string similar to Use.
         /// </summary>
         public static string use {
             get {
@@ -205,7 +205,7 @@ namespace Lmpessoa.Timer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mid-time alert after.
+        ///   Looks up a localized string similar to First alert after.
         /// </summary>
         public static string yellow_alert {
             get {

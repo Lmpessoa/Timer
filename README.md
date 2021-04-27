@@ -1,4 +1,4 @@
-![Timer icon](Resources/Header.svg)
+<img alt="Timer icon" src="Resources/Header.svg" height="150">
 
 This is a simple application that can be used to provide a timer for events and presentations.
 

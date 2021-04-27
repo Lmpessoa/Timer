@@ -127,7 +127,7 @@
     <value>Hours</value>
   </data>
   <data name="hours_too_big" xml:space="preserve">
-    <value>Numer of hours is too big.</value>
+    <value>Number of hours is too big to display.</value>
   </data>
   <data name="main_title" xml:space="preserve">
     <value>Timer Settings</value>
@@ -136,7 +136,7 @@
     <value>Minutes</value>
   </data>
   <data name="minutes_too_big" xml:space="preserve">
-    <value>Number of minutes is too big. Switch to using hours and try again.</value>
+    <value>Number of minutes is too big to display. Switch to using hours and try again.</value>
   </data>
   <data name="negative" xml:space="preserve">
     <value>Continue counting after timer ends</value>
@@ -163,9 +163,9 @@
     <value>Value of timer</value>
   </data>
   <data name="use" xml:space="preserve">
-    <value>Usar</value>
+    <value>Use</value>
   </data>
   <data name="yellow_alert" xml:space="preserve">
-    <value>Mid-time alert after</value>
+    <value>First alert after</value>
   </data>
 </root>

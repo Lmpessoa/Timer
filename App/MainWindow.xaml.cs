@@ -1,24 +1,17 @@
 ﻿/*
- * Copyright (c) 2018 Leonardo Pessoa
- * https://lmpessoa.com
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ * Copyright (c) 2021 Leonardo Pessoa
  *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 using System;
 using System.Collections.Generic;
@@ -31,7 +24,8 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
-using msg = Lmpessoa.Timer.Properties.Resources;
+
+using Resx = Lmpessoa.Timer.Properties.Resources;
 
 namespace Lmpessoa.Timer {
 
@@ -96,9 +90,11 @@ namespace Lmpessoa.Timer {
          }
       }
 
-      private void UseYellowTime_Checked(object sender, RoutedEventArgs e) => yellowTimeBox.IsEnabled = useYellowTime.IsChecked ?? false;
+      private void UseYellowTime_Checked(object sender, RoutedEventArgs e) 
+         => yellowTimeBox.IsEnabled = useYellowTime.IsChecked ?? false;
 
-      private void YellowTimeBox_LostFocus(object sender, RoutedEventArgs e) => TextBoxLostFocus(yellowTimeBox, ref yellowTime);
+      private void YellowTimeBox_LostFocus(object sender, RoutedEventArgs e) 
+         => TextBoxLostFocus(yellowTimeBox, ref yellowTime);
 
       private void YellowTimeBox_KeyUp(object sender, KeyEventArgs e) {
          if (e.Key == Key.Enter) {
@@ -107,9 +103,11 @@ namespace Lmpessoa.Timer {
          }
       }
 
-      private void UseRedTime_Checked(object sender, RoutedEventArgs e) => redTimeBox.IsEnabled = useRedTime.IsChecked ?? false;
+      private void UseRedTime_Checked(object sender, RoutedEventArgs e) 
+         => redTimeBox.IsEnabled = useRedTime.IsChecked ?? false;
 
-      private void RedTimeBox_LostFocus(object sender, RoutedEventArgs e) => TextBoxLostFocus(redTimeBox, ref redTime);
+      private void RedTimeBox_LostFocus(object sender, RoutedEventArgs e) 
+         => TextBoxLostFocus(redTimeBox, ref redTime);
 
       private void RedTimeBox_KeyUp(object sender, KeyEventArgs e) {
          if (e.Key == Key.Enter) {
@@ -137,7 +135,7 @@ namespace Lmpessoa.Timer {
       }
 
       private void SetTimer_Click(object sender, RoutedEventArgs e) {
-         if (startStopText.Text == Timer.Properties.Resources.stop || actualTime == TimeSpan.Zero) {
+         if (startStopText.Text == Resx.stop || actualTime == TimeSpan.Zero) {
             SetStartStopToStart();
             timer.Stop();
          }
@@ -148,7 +146,7 @@ namespace Lmpessoa.Timer {
       }
 
       private void StartStop_Click(object sender, RoutedEventArgs e) {
-         if (startStopText.Text == Timer.Properties.Resources.start) {
+         if (startStopText.Text == Resx.start) {
             SetStartStopToStop();
             timer.Start();
          } else {
@@ -159,14 +157,14 @@ namespace Lmpessoa.Timer {
 
       private void SetStartStopToStart(bool? disabled = null) {
          startStopIcon.Source = startImg;
-         startStopText.Text = Timer.Properties.Resources.start;
+         startStopText.Text = Resx.start;
          startStop.IsEnabled = disabled ?? actualTime != null;
          useHours.IsEnabled = useMinutes.IsEnabled = true;
       }
 
       private void SetStartStopToStop() {
          startStopIcon.Source = stopImg;
-         startStopText.Text = Timer.Properties.Resources.stop;
+         startStopText.Text = Resx.stop;
          startStop.IsEnabled = actualTime != null;
          useHours.IsEnabled = useMinutes.IsEnabled = false;
       }
@@ -196,7 +194,7 @@ namespace Lmpessoa.Timer {
                      isNegative = true;
                   } else {
                      startStopIcon.Source = startImg;
-                     startStopText.Text = Timer.Properties.Resources.start;
+                     startStopText.Text = Resx.start;
                   }
                }
             }
@@ -243,7 +241,7 @@ namespace Lmpessoa.Timer {
 
 
       private DrawingImage BuildTimer(TimeSpan? time, Brush brush, double width) {
-         DrawingGroup draw = new DrawingGroup();
+         DrawingGroup draw = new();
          string value = FormatTimeSpan(time);
 
          // mm:ss -> 13
@@ -259,8 +257,8 @@ namespace Lmpessoa.Timer {
          }
          for (int i = 0; i < max; ++i) {
             double w = i == 2 || i == 5 ? sepW : digitW;
-            GeometryDrawing gd = new GeometryDrawing(brush, null, new RectangleGeometry(new Rect(x + 2, 2, w - 4, height - 4)));
-            ImageDrawing im = new ImageDrawing(GetDigit(value, i), new Rect(x, 0, w, height));
+            GeometryDrawing gd = new(brush, null, new RectangleGeometry(new Rect(x + 2, 2, w - 4, height - 4)));
+            ImageDrawing im = new(GetDigit(value, i), new Rect(x, 0, w, height));
             draw.Children.Add(gd);
             draw.Children.Add(im);
             x += w;
@@ -268,7 +266,7 @@ namespace Lmpessoa.Timer {
          return new DrawingImage(draw);
       }
 
-      private DrawingImage GetDigit(string value, int index) {
+      private static DrawingImage GetDigit(string value, int index) {
          char digit = value != null && value.Length >= index + 1 ? value[index] : ' ';
          if (index == 2 || index == 5) {
             return (DrawingImage) res[digit == ':' ? "colon" : "colonBlank"];
@@ -297,10 +295,11 @@ namespace Lmpessoa.Timer {
             int sec = int.Parse(s.Substring(1));
             return NewTimeSpan(seconds: sec);
          }
-         throw new Exception($"{s} {msg.no_valid_time}");
+         throw new Exception($"{s} {Resx.no_valid_time}");
       }
 
-      private int GetFullMinutes(TimeSpan time) => time.Hours * 60 + time.Minutes;
+      private static int GetFullMinutes(TimeSpan time)
+         => time.Hours * 60 + time.Minutes;
 
       private string FormatTimeSpan(TimeSpan? time) {
          if (time is TimeSpan t) {
@@ -310,7 +309,6 @@ namespace Lmpessoa.Timer {
       }
 
       private TimeSpan? NewTimeSpan(int hours = 0, int minutes = 0, int seconds = 0) {
-         List<string> result = new List<string>();
          while (seconds >= 60) {
             seconds -= 60;
             minutes += 1;
@@ -321,13 +319,13 @@ namespace Lmpessoa.Timer {
                hours += 1;
             }
             if (hours > 99) {
-               throw new Exception(msg.hours_too_big);
+               throw new Exception(Resx.hours_too_big);
             }
          } else {
             minutes += hours * 60;
             hours = 0;
             if (minutes > 99) {
-               throw new Exception(msg.minutes_too_big);
+               throw new Exception(Resx.minutes_too_big);
             }
          }
          return new TimeSpan(hours, minutes, seconds);
